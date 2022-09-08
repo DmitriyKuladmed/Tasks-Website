@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+  <h1>Подробная информация о задаче</h1>
+      <div class="alert alert-warning mt-2">
+      <h3>{{ task.title }}</h3>
+      <p>{{ task.time_of_create }}</p>
+      <h4>{{ task.task }}</h4>
+      <h5>{{ task.time_of_create }}</h5>
+    </div>
+{% endblock %}

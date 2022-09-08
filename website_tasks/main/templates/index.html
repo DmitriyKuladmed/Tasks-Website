@@ -9,7 +9,7 @@
   {% if tasks %}
     {% for el in tasks %}
       <div class="alert alert-warning mt-2">
-      <h3>{{ el.title }}</h3>
+      <h2><a href="{% url 'detail' el.pk%}">{{ el.title }}</a></h2>
       <p>{{ el.time_of_create }}</p>
     </div>
   {% endfor %}
